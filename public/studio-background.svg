@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="800" y1="0" x2="800" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F2EC"/>
+      <stop offset=".56" stop-color="#E8E7E1"/>
+      <stop offset="1" stop-color="#D7D8D2"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="800" y1="740" x2="800" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFD0CA"/>
+      <stop offset=".24" stop-color="#E3E2DB"/>
+      <stop offset="1" stop-color="#F2F0E9"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientTransform="matrix(780 0 0 680 800 410)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF7" stop-opacity=".96"/>
+      <stop offset=".68" stop-color="#FFFDF7" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#FFFDF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shadow" cx="0" cy="0" r="1" gradientTransform="matrix(310 0 0 52 800 880)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343631" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#343631" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#343631" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#wall)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#floor)" d="M0 760h1600v240H0z"/>
+  <path fill="url(#light)" d="M0 0h1600v1000H0z"/>
+  <path stroke="#BFC1BA" stroke-opacity=".38" d="M0 760.5h1600"/>
+  <ellipse cx="800" cy="880" fill="url(#shadow)" rx="310" ry="52"/>
+</svg>
